@@ -18,6 +18,7 @@ def form():
 def result():
     if request.method == 'POST':
         word = request.form['word']
+        word = word.lower()
         if word in data:
             output = data[word]
             return render_template('result.html',  **locals() )
