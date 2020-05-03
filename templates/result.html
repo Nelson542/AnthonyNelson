@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dictionary</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Iceland' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Michroma' rel='stylesheet' type='text/css'>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/result.css') }}">
+
+</head>
+   <body class="overlay">
+
+                <div class="wrap">
+
+
+
+                                {% if output %}
+                                        <p> {{ word }}</p>
+                                                <br>
+                                        {% for item in output %}
+                                            <ul>
+                                                <li>{{ item }} </li>
+                                                <br>
+                                                <br>
+                                            </ul>
+                                        {% endfor %}
+                                 {% endif %}
+
+
+
+                                 {% if No %}
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <h1>Word doesn't exist. Please double check it.</h1>
+                                    <br>
+                                    <br>
+                                    <br>
+                                 {% endif %}
+
+
+
+                                <div id="back">
+                                    <form action="/">
+                                        <input type="submit" value="Back" />
+                                    </form>
+                                </div>
+
+
+
+
+                </div>
+
+
+
+   </body>
+</html>
