@@ -8,33 +8,18 @@
     <link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet' type='text/css'>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
-
-
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/form.css') }}">
 
 </head>
 <body>
-
-
-        <div class="overlay">
-          <div class="wrap">
-
-           <form action = "/result" method = "POST" autocomplete="off">
-
-               <h1>Dictionary</h1>
+    <div class="overlay">
+        <div class="wrap">
+            <form action = "/result" method = "POST" autocomplete="off">
+                <h1>Dictionary</h1>
                 <input type="text" placeholder="Enter any word" name="word">
-
                 <input type="submit" value="Submit">
            </form>
-
-
-          </div>
         </div>
-
-
-
-
-
-
+    </div>
 </body>
 </html>

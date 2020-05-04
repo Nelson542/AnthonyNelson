@@ -13,49 +13,32 @@
 
 </head>
    <body class="overlay">
+        <div class="wrap">
+            {% if output %}
+            <div class="heading">
+                <p> {{ word }}</p>
+            </div>
+            {% for item in output %}
+            <div class="definition">
+                <ul>
+                    <li>{{ item }} </li>
+                </ul>
+            </div>
+            {% endfor %}
+            {% endif %}
 
-                <div class="wrap">
+            {% if No %}
+            <div class="no">
+                <h1>Word doesn't exist. Please double check it.</h1>
+            </div>
+            {% endif %}
 
+            <div id="back">
+                <form action="/">
+                    <input type="submit" value="Back" />
+                </form>
+            </div>
 
-
-                                {% if output %}
-                                        <p> {{ word }}</p>
-                                                <br>
-                                        {% for item in output %}
-                                            <ul>
-                                                <li>{{ item }} </li>
-                                                <br>
-                                                <br>
-                                            </ul>
-                                        {% endfor %}
-                                 {% endif %}
-
-
-
-                                 {% if No %}
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <h1>Word doesn't exist. Please double check it.</h1>
-                                    <br>
-                                    <br>
-                                    <br>
-                                 {% endif %}
-
-
-
-                                <div id="back">
-                                    <form action="/">
-                                        <input type="submit" value="Back" />
-                                    </form>
-                                </div>
-
-
-
-
-                </div>
-
-
-
+        </div>
    </body>
 </html>

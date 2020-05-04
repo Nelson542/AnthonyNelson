@@ -47,8 +47,9 @@
 
 li{
   color:#FFF;
-  text-align:center;
+  text-align:justify;
   font:40px Iceland;
+
 
 }
 
@@ -76,6 +77,22 @@ h1{
   margin-top: 0%
 
 }
+
+.heading
+{
+padding: 10px;
+}
+
+.definition
+{
+padding: 10px;
+}
+
+.no
+{
+padding: 60px;
+}
+
 
 input{
   width:100%;
