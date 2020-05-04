@@ -21,9 +21,11 @@ def result():
         word = word.lower()
         if word in data:
             output = data[word]
+            word = word.title()
             return render_template('result.html',  **locals() )
         elif word.title() in data:
             output =  data[word.title()]
+            word = word.title()
             return render_template('result.html',  **locals())
         else:
             No = "Word doesn't exist"
