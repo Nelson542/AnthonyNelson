@@ -48,9 +48,15 @@
 li{
   color:#FFF;
   font:40px Iceland;
-
-
 }
+
+@media only screen and (max-width: 600px) {
+  li {
+    font-size: 26px;
+  }
+}
+
+
 
 p{
   color:#FFF;
@@ -58,6 +64,14 @@ p{
   font-family:"Michroma";
   font-size: 80px;
 }
+
+
+@media only screen and (max-width: 600px) {
+  p {
+    font-size: 24px;
+  }
+}
+
 
 
 h1{
@@ -77,6 +91,15 @@ h1{
 
 }
 
+
+@media only screen and (max-width: 600px) {
+  .wrap {
+    width: 100%;
+  }
+}
+
+
+
 .heading
 {
 padding: 10px;
@@ -85,6 +108,7 @@ padding: 10px;
 .definition
 {
 padding: 10px;
+text-align: center;
 }
 
 .no
@@ -132,4 +156,15 @@ text-align :center;
 }
 
 
+@media only screen and (max-width: 600px) {
+input[type="submit"]{
+    font-size: 13px;
+}
+}
+
+@media only screen and (max-width: 600px) {
+input{
+    height: 45px;
+}
+}
 
