@@ -1,6 +1,6 @@
 .overlay{
    position: auto;
-   background: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/footer_lodyas.png);
+   background: url(/static/images/background.png);
   -webkit-animation:100s scroll infinite linear;
   -moz-animation:100s scroll infinite linear;
   -o-animation:100s scroll infinite linear;
@@ -124,7 +124,7 @@ text-align: center;
 
 @media only screen and (max-width: 600px) {
   .definition {
-    text-align: left;
+    text-align: justify;
   }
 }
 
