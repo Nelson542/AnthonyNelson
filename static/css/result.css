@@ -124,7 +124,7 @@ text-align: center;
 
 @media only screen and (max-width: 600px) {
   .definition {
-    text-align: justify;
+    text-align: left;
   }
 }
 
